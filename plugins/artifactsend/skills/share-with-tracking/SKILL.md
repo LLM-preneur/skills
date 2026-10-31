@@ -15,19 +15,9 @@ ArtifactSend turns any artifact into a link that tells the sender who read it. R
 - "Who read the proposal I sent?" / "What did they ask?"
 - The user wants DocSend, Papermark or a tracked link, and does not want to pay per seat.
 
-## Step 1: make sure the tools are there
+## Step 1: sign in once
 
-Look for the ArtifactSend tools (`send_artifact`, `link_report`). If they are missing, add the MCP server once:
-
-- Claude Code: `claude mcp add --transport http artifactsend https://artifactsend.com/mcp`, then run `/mcp` and choose artifactsend to sign in.
-- Any agent: `npx artifactsend setup` adds it to Claude Code, Cursor, VS Code, Windsurf, Gemini CLI and Codex.
-- Claude.ai or ChatGPT: add a custom connector with the URL `https://artifactsend.com/mcp`.
-
-No MCP at all? Use the CLI with a token from https://artifactsend.com/app/settings:
-
-```bash
-ARTIFACTSEND_TOKEN=as_... npx artifactsend send deck.pdf --title "Seed deck" --access email
-```
+This plugin adds the ArtifactSend MCP server (`send_artifact`, `link_report`). The first time, run `/mcp`, choose artifactsend and sign in.
 
 ## Step 2: send it
 

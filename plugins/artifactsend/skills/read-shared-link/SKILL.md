@@ -10,7 +10,7 @@ Someone sent the user an ArtifactSend link. The user's AI can read it as the use
 ## Step 1: connect once
 
 - With the ArtifactSend MCP server (`open_link`, `read_shared`, `ask_shared`): use it.
-- Without it, every shared link has its own MCP address with no key: the link plus `/mcp`, e.g. `https://artifactsend.com/d/ab12cd34/mcp`. Its tools are `read_document`, `ask_document` and `message_sender` (and `list_documents` for a room); it asks for the user's email at the door. Or add the account server once: `claude mcp add --transport http artifactsend https://artifactsend.com/mcp`.
+- This plugin adds that server. The first time, run `/mcp`, choose artifactsend and sign in.
 
 ## Step 2: open it
 
