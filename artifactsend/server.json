@@ -3,7 +3,7 @@
   "name": "com.artifactsend/mcp",
   "title": "ArtifactSend",
   "description": "Share docs, decks, HTML and Claude artifacts as tracked links and data rooms. See who read them.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "websiteUrl": "https://artifactsend.com",
   "repository": {
     "url": "https://github.com/LLM-preneur/skills",
