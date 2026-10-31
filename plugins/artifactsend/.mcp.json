@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "artifactsend": { "type": "http", "url": "https://artifactsend.com/mcp" }
+  }
+}

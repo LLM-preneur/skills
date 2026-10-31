@@ -1,0 +1,27 @@
+{
+  "name": "llm-preneur",
+  "owner": {
+    "name": "Vela Partners",
+    "url": "https://vela.partners"
+  },
+  "metadata": {
+    "description": "Agent plugins for the apps Vela Partners builds. ArtifactSend: tracked links and data rooms."
+  },
+  "plugins": [
+    {
+      "name": "artifactsend",
+      "source": "./plugins/artifactsend",
+      "description": "Tracked links and data rooms from Claude Code: share a file or page, see who opened it, how far they read and what they asked.",
+      "category": "productivity",
+      "homepage": "https://artifactsend.com",
+      "keywords": [
+        "share",
+        "docsend",
+        "data-room",
+        "analytics",
+        "publish",
+        "html"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "artifactsend",
+  "version": "1.0.0",
+  "description": "Share documents, decks, HTML pages and Claude artifacts as tracked links and data rooms. See who read them and what they asked. MCP server, agent skills and CLI.",
+  "mcpName": "com.artifactsend/mcp",
+  "type": "module",
+  "bin": {
+    "artifactsend": "bin/artifactsend.mjs"
+  },
+  "files": [
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "agent-skills",
+    "claude",
+    "claude-code",
+    "chatgpt",
+    "cursor",
+    "docsend",
+    "docsend-alternative",
+    "document-tracking",
+    "data-room",
+    "share-html",
+    "publish-html",
+    "artifacts",
+    "pitch-deck",
+    "analytics"
+  ],
+  "homepage": "https://artifactsend.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LLM-preneur/skills.git",
+    "directory": "artifactsend"
+  },
+  "bugs": {
+    "url": "https://github.com/LLM-preneur/skills/issues"
+  },
+  "author": "Vela Partners (https://vela.partners)",
+  "license": "MIT"
+}

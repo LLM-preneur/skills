@@ -1,0 +1,21 @@
+{
+  "name": "artifactsend",
+  "version": "1.0.0",
+  "description": "Tracked links and data rooms from Claude Code: share a file or page, see who opened it, how far they read and what they asked.",
+  "author": {
+    "name": "Vela Partners",
+    "url": "https://vela.partners"
+  },
+  "homepage": "https://artifactsend.com",
+  "repository": "https://github.com/LLM-preneur/skills",
+  "license": "MIT",
+  "keywords": [
+    "share",
+    "docsend",
+    "data-room",
+    "analytics",
+    "publish",
+    "html",
+    "mcp"
+  ]
+}
