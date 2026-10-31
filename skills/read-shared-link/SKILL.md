@@ -1,6 +1,6 @@
 ---
 name: read-shared-link
-description: Open and read a document or data room someone shared through an artifactsend.com link (artifactsend.com/d/... or /r/...), answer questions about it, and reply to the sender. Use when the user pastes an ArtifactSend link, asks to summarize or question a shared deck, memo or data room, or wants to message the person who sent it.
+description: "Open and read a document or data room someone shared through an artifactsend.com link (artifactsend.com/d/... or /r/...), answer questions about it, and reply to the sender. Use when the user pastes an ArtifactSend link, asks to summarize or question a shared deck, memo or data room, or wants to message the person who sent it."
 ---
 
 # Read a shared ArtifactSend link

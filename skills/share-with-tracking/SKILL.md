@@ -1,6 +1,6 @@
 ---
 name: share-with-tracking
-description: Share a document, pitch deck, HTML page, Claude artifact, PDF, Word, PowerPoint or Markdown file as a tracked link and see who opened it, how far they read, time per section and what they asked. Use when the user wants to send, share or publish a file or page and know who read it, needs a DocSend alternative, one link per investor or client, an email gate, expiry, or a reading report. Free, by ArtifactSend.
+description: "Share a document, pitch deck, HTML page, Claude artifact, PDF, Word, PowerPoint or Markdown file as a tracked link and see who opened it, how far they read, time per section and what they asked. Use when the user wants to send, share or publish a file or page and know who read it, needs a DocSend alternative, one link per investor or client, an email gate, expiry, or a reading report. Free, by ArtifactSend."
 ---
 
 # Share with tracking (ArtifactSend)

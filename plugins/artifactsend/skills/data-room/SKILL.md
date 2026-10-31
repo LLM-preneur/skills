@@ -1,6 +1,6 @@
 ---
 name: data-room
-description: Build a virtual data room for fundraising, due diligence, M&A, a board or a client: several documents behind one link, with folders, an NDA readers accept first, watermarks with each reader's email, and a report of who opened which document and for how long. Use when the user says data room, deal room, diligence folder, investor folder, or wants to share many files with one tracked link. Free, by ArtifactSend.
+description: "Build a virtual data room for fundraising, due diligence, M&A, a board or a client: several documents behind one link, with folders, an NDA readers accept first, watermarks with each reader's email, and a report of who opened which document and for how long. Use when the user says data room, deal room, diligence folder, investor folder, or wants to share many files with one tracked link. Free, by ArtifactSend."
 ---
 
 # Data room (ArtifactSend)
