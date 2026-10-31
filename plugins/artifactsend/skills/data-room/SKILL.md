@@ -9,11 +9,7 @@ One link and one door for many documents. The sender sees who entered, who accep
 
 ## Step 1: tools
 
-Needs the ArtifactSend MCP server (`make_data_room`, `room_report`). If missing:
-
-- Claude Code: `claude mcp add --transport http artifactsend https://artifactsend.com/mcp`, then `/mcp` to sign in.
-- Other agents: `npx artifactsend setup`.
-- Claude.ai or ChatGPT: custom connector `https://artifactsend.com/mcp`.
+This plugin adds the ArtifactSend MCP server (`make_data_room`, `room_report`). The first time, run `/mcp`, choose artifactsend and sign in.
 
 ## Step 2: put each document in
 
