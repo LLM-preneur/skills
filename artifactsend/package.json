@@ -1,6 +1,6 @@
 {
   "name": "artifactsend",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Share documents, decks, HTML pages and Claude artifacts as tracked links and data rooms. See who read them and what they asked. MCP server, agent skills and CLI.",
   "mcpName": "com.artifactsend/mcp",
   "type": "module",
