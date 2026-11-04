@@ -1,6 +1,6 @@
 # Publishes the artifactsend CLI to npm with npm trusted publishing (GitHub OIDC). No npm token is stored anywhere.
 # Run by hand from the Actions tab. npm accepts it only from this repo and this workflow file, as set on the package's
-# Trusted Publisher settings on npmjs.com.
+# Trusted Publisher settings on npmjs.com (environment npm-publish).
 name: Publish to npm
 on:
   workflow_dispatch:
@@ -9,6 +9,9 @@ permissions:
   id-token: write
 jobs:
   publish:
+    # Only from main, and only through the npm-publish environment, which npm's Trusted Publisher entry also names.
+    if: github.ref == 'refs/heads/main'
+    environment: npm-publish
     runs-on: ubuntu-latest
     defaults:
       run:
