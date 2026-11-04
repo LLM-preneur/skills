@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "artifactsend",
+  "version": "1.1.0",
+  "description": "Share a finished file or page as a tracked link and see who opened it, how far they read and what they asked. Skills for tracked links and data rooms, plus the ArtifactSend MCP server.",
+  "author": { "name": "Vela Partners", "url": "https://vela.partners" },
+  "homepage": "https://artifactsend.com/agents?utm_source=skill&utm_medium=github&utm_campaign=plugin",
+  "repository": "https://github.com/LLM-preneur/skills",
+  "license": "MIT",
+  "keywords": ["share", "tracked-links", "data-room", "analytics", "publish", "html", "mcp", "docsend"]
+}
