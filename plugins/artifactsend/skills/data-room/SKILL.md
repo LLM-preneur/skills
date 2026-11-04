@@ -13,7 +13,7 @@ This plugin adds the ArtifactSend MCP server (`make_data_room`, `room_report`). 
 
 ## Step 2: put each document in
 
-Send each file with `send_artifact` (complete content: `html`, `react`, `markdown`, or `document` with `name` and `base64` for PDF, Word, PowerPoint, Excel). Give each a clear `title`, e.g. "Financial model FY26". Use `folder` when the user groups them.
+Send only the documents meant for the room, never source folders, credentials or raw exports. Send each file with `send_artifact` (complete content: `html`, `react`, `markdown`, or `document` with `name` and `base64` for PDF, Word, PowerPoint, Excel). Give each a clear `title`, e.g. "Financial model FY26". Use `folder` when the user groups them.
 
 ## Step 3: make the room
 
@@ -21,11 +21,11 @@ Call `make_data_room` with:
 
 - `name`: e.g. "Acme Series A".
 - `links`: the links from step 2.
-- `access`: `email` (default) or `verified` for proof of email. Use `allow` for only certain people or domains.
+- `access`: `email` (default) asks for an address. `verified` proves it with Google or a 6-digit code. Use `verified` for diligence material.
 - `nda`: the agreement text, when the user wants one. Readers accept it before they enter.
 - `watermark: true` to stamp each page with the reader's email.
 
-Show the user the room link and its settings in a short list.
+Before you make it, show the documents, room name, access, agreement and watermark in one short list and ask once. Show the user the room link and its settings in a short list. An allow list and per-folder access by person are set on the room in the app at https://artifactsend.com/app?utm_source=skill&utm_medium=agent&utm_campaign=data-room.
 
 ## Step 4: who read what
 

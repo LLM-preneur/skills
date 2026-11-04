@@ -9,8 +9,10 @@ import { createInterface } from 'node:readline';
 
 const ORIGIN = (process.env.ARTIFACTSEND_URL || 'https://artifactsend.com').replace(/\/$/, '');
 const MCP = ORIGIN + '/mcp';
+// Pages people open from the CLI's own output carry a source tag. Config the CLI writes keeps the bare MCP URL.
+const TOKENS = ORIGIN + '/app/settings?utm_source=npm&utm_medium=cli&utm_campaign=setup';
 const SKILLS = 'LLM-preneur/skills';
-const VERSION = '1.0.0';
+const VERSION = '1.0.1';
 const [cmd, ...rest] = process.argv.slice(2);
 
 const HELP = `ArtifactSend: the link that tells you who read it.
@@ -23,7 +25,7 @@ const HELP = `ArtifactSend: the link that tells you who read it.
   npx artifactsend report <link>    Who read it, how far, time per section, what they asked
   npx artifactsend mcp              Run as a stdio MCP server (bridges to ${MCP})
 
-send, links, report and mcp need ARTIFACTSEND_TOKEN (make one at ${ORIGIN}/app/settings).
+send, links, report and mcp need ARTIFACTSEND_TOKEN (make one at ${TOKENS}).
 In Claude Code you can skip the token: claude mcp add --transport http artifactsend ${MCP}, then /mcp to sign in.
 Claude.ai and ChatGPT: add a custom connector with the URL ${MCP}.`;
 
@@ -84,7 +86,7 @@ function setup(opts) {
 // ---------- MCP over HTTP ----------
 const token = () => {
   const t = process.env.ARTIFACTSEND_TOKEN;
-  if (!t) { console.error(`Set ARTIFACTSEND_TOKEN first. Make one at ${ORIGIN}/app/settings`); process.exit(2); }
+  if (!t) { console.error(`Set ARTIFACTSEND_TOKEN first. Make one at ${TOKENS}`); process.exit(2); }
   return t;
 };
 let rpcId = 0;
