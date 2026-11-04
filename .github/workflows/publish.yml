@@ -1,6 +1,7 @@
-# Publishes the artifactsend CLI to npm with npm trusted publishing (GitHub OIDC). No npm token is stored anywhere.
-# Run by hand from the Actions tab. npm accepts it only from this repo and this workflow file, as set on the package's
-# Trusted Publisher settings on npmjs.com (environment npm-publish).
+# Stages a new version of the artifactsend CLI on npm with trusted publishing (GitHub OIDC). No npm token is stored
+# anywhere. Run by hand from the Actions tab. npm accepts it only from this repo, this workflow file and the npm-publish
+# environment, as set on the package's Trusted Publisher settings on npmjs.com. The trusted publisher may only stage:
+# a maintainer approves the staged version on npmjs.com with their passkey before anyone can install it.
 name: Publish to npm
 on:
   workflow_dispatch:
@@ -29,4 +30,4 @@ jobs:
           V=$(node -p "require('./package.json').version")
           if npm view "artifactsend@$V" version >/dev/null 2>&1; then echo "artifactsend@$V is already published"; echo "skip=1" >> "$GITHUB_OUTPUT"; fi
       - if: steps.check.outputs.skip != '1'
-        run: npm publish --access public --provenance
+        run: npm stage publish
