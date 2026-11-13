@@ -66,9 +66,13 @@ Settings, Apps, Developer mode on, Create app. Use the URL `https://artifactsend
 - See who read it: `list_links`, `link_report`, `reader_activity`, `recent_activity`, `room_report`, `list_questions`, `list_comments`, `website_visits`, `schedule_digest`, `list_schedules`, `delete_schedule`.
 - Read what others share with you: `open_link`, `read_shared`, `ask_shared`, `message_shared_sender`, `shared_with_me`.
 
-### Can I share a HeyGen or Higgsfield video and see who watched it?
+### Can I share a HeyGen, Runway, Synthesia or Higgsfield video and see who watched it?
 
-Yes. Connect the video tool and ArtifactSend to the same AI app. When the video is ready, the AI passes its address to `send_artifact` as `video_url` (mp4, webm or mov, up to 200 MB). For a file on disk, such as a HyperFrames render, `start_upload` returns one command that sends it in parts. `link_report` then shows each viewer, how much they watched, the parts they skipped or watched again, and where viewers stop. Guides: [HeyGen](https://artifactsend.com/guides/share-heygen-video-track-views?utm_source=skill&utm_medium=github&utm_campaign=readme), [Higgsfield](https://artifactsend.com/guides/share-higgsfield-video-track-views?utm_source=skill&utm_medium=github&utm_campaign=readme), [HyperFrames](https://artifactsend.com/guides/share-hyperframes-video?utm_source=skill&utm_medium=github&utm_campaign=readme).
+Yes. Connect the video tool and ArtifactSend to the same AI app. When the video is ready, the AI passes its address to `send_artifact` as `video_url` (mp4, webm or mov, up to 200 MB). For a file on disk, such as a HyperFrames render, `start_upload` returns one command that sends it in parts. `link_report` then shows each viewer, how much they watched, the parts they skipped or watched again, and where viewers stop. Every tool: [AI tools that work with ArtifactSend](https://artifactsend.com/guides/ai-tools-that-work-with-artifactsend?utm_source=skill&utm_medium=github&utm_campaign=readme). Guides: [HeyGen](https://artifactsend.com/guides/share-heygen-video-track-views?utm_source=skill&utm_medium=github&utm_campaign=readme), [Higgsfield](https://artifactsend.com/guides/share-higgsfield-video-track-views?utm_source=skill&utm_medium=github&utm_campaign=readme), [HyperFrames](https://artifactsend.com/guides/share-hyperframes-video?utm_source=skill&utm_medium=github&utm_campaign=readme).
+
+### Can I track a Gamma deck or a Carbone document?
+
+Yes. Both return a download link. Pass it to `send_artifact` as `url`; ArtifactSend fetches it once and makes a document link with time on each slide or page, one link per person if you like. Guides: [Gamma](https://artifactsend.com/guides/share-gamma-presentation-track-views?utm_source=skill&utm_medium=github&utm_campaign=readme), [Carbone](https://artifactsend.com/guides/share-carbone-documents-track-opens?utm_source=skill&utm_medium=github&utm_campaign=readme).
 
 ### What can I send from other skills?
 
