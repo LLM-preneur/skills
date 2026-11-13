@@ -26,6 +26,14 @@ Share a document, pitch deck, HTML page, dashboard, video or Claude artifact as 
 | [data-room](skills/data-room/) | several documents behind one link, with folders, an NDA and watermarks |
 | [read-shared-link](skills/read-shared-link/) | someone sent you an artifactsend.com link |
 
+## Growth
+
+Playbooks we use to launch the apps, for any product.
+
+| Skill | Use it when |
+| --- | --- |
+| [ai-search-playbook](skills/ai-search-playbook/) | a new site should be cited and recommended by ChatGPT search: Bing and IndexNow, answer pages, a citation study, chatgpt.com attribution |
+
 ## Questions
 
 ### Is there a Claude Code skill to publish an HTML file to a URL?
