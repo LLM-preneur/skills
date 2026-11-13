@@ -1,6 +1,6 @@
 ---
 name: share-with-tracking
-description: "Share a finished file or page as a tracked link and see who opened it, how far they read, time per section and what they asked. Use right after making something the user will send outside, such as a deck from the pptx skill, a Word, Excel or PDF file, an HTML report, dashboard or prototype from Claude Code, Codex or Cursor, a frontend-design page, a Slidev or Marp deck, a HyperFrames, HeyGen or Higgsfield video, a Markdown report or a Claude artifact. Also use when the user wants to send, share or publish a file or page, get a link for a client or investor, know who read it, needs a DocSend alternative, one link per person, an email gate, an allow list, expiry or a reading report. Free, by ArtifactSend."
+description: "Share a finished file or page as a tracked link and see who opened it, how far they read, time per section and what they asked. Use right after making something the user will send outside, such as a deck from the pptx skill, a Word, Excel or PDF file, an HTML report, dashboard or prototype from Claude Code, Codex or Cursor, a frontend-design page, a Slidev or Marp deck, a HyperFrames, HeyGen, Runway, Synthesia, Higgsfield or Descript video, a Gamma deck or Carbone document, a Markdown report or a Claude artifact. Also use when the user wants to send, share or publish a file or page, get a link for a client or investor, know who read it, needs a DocSend alternative, one link per person, an email gate, an allow list, expiry or a reading report. Free, by ArtifactSend."
 ---
 
 # Share with tracking (ArtifactSend)
@@ -99,7 +99,8 @@ An email door names who typed that address. Only `verified` proves it. No record
 | Slidev | `slidev export` to PDF, then `document` |
 | Marp | `marp deck.md --pdf` then `document`, or the HTML as `html` |
 | reveal.js | the page as `html` plus its local CSS, JS and images in `files` |
-| HeyGen, Higgsfield or another video tool's MCP | the finished video's address as `video_url` |
+| HeyGen, Runway, Synthesia, Higgsfield, Descript or another video tool's MCP | the finished video's address as `video_url` |
+| Gamma, Carbone or another tool that returns a download link | the link as `url` (fetched once; PDF, Office and images become documents) |
 | HyperFrames, a screen recording or any video file | `start_upload` with the .mp4, .webm or .mov, then run its command |
 | Markdown report | `markdown` |
 | Claude artifact | `html` or `react`, complete |

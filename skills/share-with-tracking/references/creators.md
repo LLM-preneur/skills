@@ -46,15 +46,24 @@ PDF and PPTX conversion needs Chrome, Edge or Firefox. Local images in those nee
 
 A reveal.js deck is one HTML page. Send it as `html`. Put its local `reveal.js`, CSS, theme and image files in `files` with their relative paths. A deck that loads reveal.js from a public CDN needs only the page and its images.
 
-## Video from HeyGen, Higgsfield or another video tool's MCP
+## Video from HeyGen, Runway, Synthesia, Higgsfield, Descript or another video tool's MCP
 
 A video tool connected to the same AI app returns the finished video's address. Pass it straight to ArtifactSend:
 
-1. Wait until the tool says the video is done, then take its address. HeyGen: `get_video` returns `video_url` once the status is completed (the address expires, so share soon after or ask HeyGen again). Higgsfield: the clip's address in the result; the same clip is in Assets on higgsfield.ai.
+1. Wait until the tool says the video is done, then take its address. HeyGen: `get_video` returns `video_url` once the status is completed (the address expires, so share soon after or ask HeyGen again). Higgsfield: the clip's address in the result; the same clip is in Assets on higgsfield.ai. Runway: the generated video's address in the result. Synthesia: ask for the video's download. Descript: publish first; publishing returns signed MP4 addresses (no download without publishing).
 2. `send_artifact` with `video_url` set to that address, plus the user's door words (`access`, `allow`, `expires_in_days`, `notify`). Leave out `link`: a video always gets a new link.
 3. Show the link and its settings. One link per viewer: `link_for_person` on the video link.
 
 `video_url` takes a public mp4, webm or mov up to 200 MB. A page or an expired address is refused with the reason. A video sent as `url` is treated the same way.
+
+## A document or deck from Gamma, Carbone or another tool's MCP
+
+These tools return a download link, not the file. Pass it to `send_artifact` as `url`: ArtifactSend fetches it once, and a PDF, Word, PowerPoint, Excel file or image becomes a document link with time on each page, slide or sheet.
+
+- Gamma: ask for an export to PDF or PowerPoint; the export runs in the background and its status gives the download link.
+- Carbone: generate from the template, then send the download link straight away. Carbone deletes the file after the first download.
+
+For several clients, one document and one `link_for_person` link per client.
 
 ## A video file on this computer (HyperFrames, a screen recording, a camera)
 
