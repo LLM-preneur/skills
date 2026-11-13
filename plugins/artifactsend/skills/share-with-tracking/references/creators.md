@@ -46,13 +46,34 @@ PDF and PPTX conversion needs Chrome, Edge or Firefox. Local images in those nee
 
 A reveal.js deck is one HTML page. Send it as `html`. Put its local `reveal.js`, CSS, theme and image files in `files` with their relative paths. A deck that loads reveal.js from a public CDN needs only the page and its images.
 
-## HyperFrames video
+## Video from HeyGen, Higgsfield or another video tool's MCP
+
+A video tool connected to the same AI app returns the finished video's address. Pass it straight to ArtifactSend:
+
+1. Wait until the tool says the video is done, then take its address. HeyGen: `get_video` returns `video_url` once the status is completed (the address expires, so share soon after or ask HeyGen again). Higgsfield: the clip's address in the result; the same clip is in Assets on higgsfield.ai.
+2. `send_artifact` with `video_url` set to that address, plus the user's door words (`access`, `allow`, `expires_in_days`, `notify`). Leave out `link`: a video always gets a new link.
+3. Show the link and its settings. One link per viewer: `link_for_person` on the video link.
+
+`video_url` takes a public mp4, webm or mov up to 200 MB. A page or an expired address is refused with the reason. A video sent as `url` is treated the same way.
+
+## A video file on this computer (HyperFrames, a screen recording, a camera)
+
+1. HyperFrames: render the composition, `npx hyperframes render --output demo.mp4`. Without `--output` it writes to `renders/<project>_<date>_<time>.mp4`.
+2. `start_upload` with `file_name: "demo.mp4"` and the door settings. It returns one command that sends the file in 8 MB parts and prints the link as JSON. Put the real path in it, keep the quotes, and run it.
+
+Up to 200 MB, mp4, webm or mov. The reader gets a player; downloads stay off unless `downloads` is on.
+
+## What the report says about a video
+
+`link_report` on a video link adds `video`: who watched each part (`whoWatchedEachPart`), `biggestDropOff` and `watchedAgain`. Each viewer in `readers_list` has `watched` (such as "2:14 of 3:05 (72%)"), `skipped` and `watchedAgain`. Watching is counted per 10 seconds; a part counts after 2 seconds.
+
+## HyperFrames video as a page (small files only)
 
 1. Render the composition: `npx hyperframes render --output demo.mp4`. Without `--output` it writes to `renders/<project>_<date>_<time>.mp4`.
 2. Write a small page that plays it: `<video src="media/demo.mp4" controls playsinline style="width:100%"></video>`, with a heading for the title.
 3. `send_artifact` with that `html` and `files: [{ path: "media/demo.mp4", base64: "..." }]`.
 
-The MP4 must be 10 MB or less this way. A larger video (up to 200 MB) can be uploaded in the app at https://artifactsend.com/app?utm_source=skill&utm_medium=agent&utm_campaign=share-with-tracking, where the report shows how much each reader watched. Turn on `downloads` only if the user wants readers to keep a copy.
+Use this only to put a short clip inside a page of your own: the MP4 must be 10 MB or less, and the report counts time on the page, not watch time. For a video on its own, use `start_upload` above.
 
 ## Markdown report
 

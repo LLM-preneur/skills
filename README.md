@@ -66,9 +66,13 @@ Settings, Apps, Developer mode on, Create app. Use the URL `https://artifactsend
 - See who read it: `list_links`, `link_report`, `reader_activity`, `recent_activity`, `room_report`, `list_questions`, `list_comments`, `website_visits`, `schedule_digest`, `list_schedules`, `delete_schedule`.
 - Read what others share with you: `open_link`, `read_shared`, `ask_shared`, `message_shared_sender`, `shared_with_me`.
 
+### Can I share a HeyGen or Higgsfield video and see who watched it?
+
+Yes. Connect the video tool and ArtifactSend to the same AI app. When the video is ready, the AI passes its address to `send_artifact` as `video_url` (mp4, webm or mov, up to 200 MB). For a file on disk, such as a HyperFrames render, `start_upload` returns one command that sends it in parts. `link_report` then shows each viewer, how much they watched, the parts they skipped or watched again, and where viewers stop. Guides: [HeyGen](https://artifactsend.com/guides/share-heygen-video-track-views?utm_source=skill&utm_medium=github&utm_campaign=readme), [Higgsfield](https://artifactsend.com/guides/share-higgsfield-video-track-views?utm_source=skill&utm_medium=github&utm_campaign=readme), [HyperFrames](https://artifactsend.com/guides/share-hyperframes-video?utm_source=skill&utm_medium=github&utm_campaign=readme).
+
 ### What can I send from other skills?
 
-A deck from the pptx skill, a docx, xlsx or pdf file, an HTML page from frontend-design, Claude Code, Codex or Cursor, a Slidev, Marp or reveal.js deck, a HyperFrames video or a Markdown report. Recipes: [creators.md](skills/share-with-tracking/references/creators.md).
+A deck from the pptx skill, a docx, xlsx or pdf file, an HTML page from frontend-design, Claude Code, Codex or Cursor, a Slidev, Marp or reveal.js deck, a HeyGen, Higgsfield or HyperFrames video, or a Markdown report. Recipes: [creators.md](skills/share-with-tracking/references/creators.md).
 
 ## Layout
 
