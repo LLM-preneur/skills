@@ -11,7 +11,7 @@
     {
       "name": "artifactsend",
       "source": "./plugins/artifactsend",
-      "description": "Tracked links and data rooms from Claude Code: share a file or page, see who opened it, how far they read and what they asked. Readers are told on every page that the sender sees their reading.",
+      "description": "Tracked links and data rooms from Claude Code: share a file or page, see who opened it, how far they read and what they asked. Readers are informed on every page that the sender receives view analytics.",
       "category": "productivity",
       "homepage": "https://artifactsend.com",
       "keywords": [

@@ -1,7 +1,7 @@
 {
   "name": "artifactsend",
   "version": "1.1.1",
-  "description": "Tracked links and data rooms from Claude Code: share a file or page, see who opened it, how far they read and what they asked. Readers are told on every page that the sender sees their reading.",
+  "description": "Tracked links and data rooms from Claude Code: share a file or page, see who opened it, how far they read and what they asked. Readers are informed on every page that the sender receives view analytics.",
   "author": {
     "name": "Vela Partners",
     "url": "https://vela.partners"
