@@ -15,7 +15,7 @@ const SKILLS = 'LLM-preneur/skills';
 const VERSION = '1.0.1';
 const [cmd, ...rest] = process.argv.slice(2);
 
-const HELP = `ArtifactSend: the link that tells you who read it.
+const HELP = `ArtifactSend: share important documents, know when to follow up.
 
   npx artifactsend setup            Add ArtifactSend to Claude Code, Cursor, VS Code, Windsurf, Gemini CLI and Codex
   npx artifactsend send <file>      Share a file as a tracked link (HTML, Markdown, PDF, Word, PowerPoint, Excel, JSX)
