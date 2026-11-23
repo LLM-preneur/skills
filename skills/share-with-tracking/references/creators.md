@@ -68,7 +68,7 @@ For several clients, one document and one `link_for_person` link per client.
 ## A video file on this computer (HyperFrames, a screen recording, a camera)
 
 1. HyperFrames: render the composition, `npx hyperframes render --output demo.mp4`. Without `--output` it writes to `renders/<project>_<date>_<time>.mp4`.
-2. `start_upload` with `file_name: "demo.mp4"` and the door settings. It returns one command that sends the file in 8 MB parts and prints the link as JSON. Put the real path in it, keep the quotes, and run it.
+2. `start_upload` with `file_name: "demo.mp4"` and the door settings. Take only `upload_url` from its reply, then send the video with the video command in SKILL.md ("A large file or a video on this computer"), with the real path and the address in single quotes. It prints the link as JSON.
 
 Up to 200 MB, mp4, webm or mov. The reader gets a player; downloads stay off unless `downloads` is on.
 
