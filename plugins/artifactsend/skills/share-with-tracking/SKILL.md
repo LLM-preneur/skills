@@ -5,7 +5,7 @@ description: "Share a finished file or page as a tracked link and see who opened
 
 # Share with tracking (ArtifactSend)
 
-ArtifactSend turns any finished file or page into a link that tells the sender who read it. Readers open it in a browser or through their own AI. The sender sees each reader, how far they read, time per section or slide, clicks, copied text and the questions they asked.
+ArtifactSend shares any finished file or page as a tracked link, so the sender knows who read it and when to follow up. Readers open it in a browser or through their own AI. The sender sees each reader, how far they read, time per section or slide, clicks, copied text and the questions they asked.
 
 ## When to use it
 
